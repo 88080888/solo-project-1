@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+.container-big {
+ display: flex;
+ background: $black-color;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background: $background-color;
+}
+
+.sidebar {
+  background: greenyellow;
+}
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+}
