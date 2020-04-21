@@ -9,19 +9,23 @@
 
 .title {
   width: 100%;
+  display: flex;
+  flex-direction: row;
 }
+
 .title-text {
   color: $page-color;
   font-family: "Dancing Script", cursive;
-  font-size: 40px;
+  font-size: 45px;
   padding: 0 10%;
   width: 100%;
 }
 
 .fa-bars {
-  margin-left: 20%;
-  font-size: 25px;
+  font-size: 40px;
   color: $text-color;
+  padding-top: 40px;
+  padding-right: 40px;
 }
 
 .icon-sidebar {
@@ -88,7 +92,7 @@
     border-radius: 50%;
     position: absolute;
     left: 67px;
-    top:536px;
+    top:563px;
   }
 }
 

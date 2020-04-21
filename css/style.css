@@ -390,6 +390,34 @@ body {
   margin-top: 79px;
 }
 
+@media (max-width: 700px) {
+  .sidebar {
+    max-width: 100px;
+  }
+  .title-text {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .chat {
+    display: none;
+  }
+  .topbar {
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .main-container {
+    padding-left: 100px;
+  }
+  .chart img {
+    max-height: 100px;
+  }
+}
+
 /* Components */
 .icons {
   color: #a1a1a1;
@@ -499,20 +527,25 @@ body {
 
 .title {
   width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
 }
 
 .title-text {
   color: #ffffff;
   font-family: "Dancing Script", cursive;
-  font-size: 40px;
+  font-size: 45px;
   padding: 0 10%;
   width: 100%;
 }
 
 .fa-bars {
-  margin-left: 20%;
-  font-size: 25px;
+  font-size: 40px;
   color: #a1a1a1;
+  padding-top: 40px;
+  padding-right: 40px;
 }
 
 .icon-sidebar {
@@ -579,7 +612,11 @@ body {
   border-radius: 50%;
   position: absolute;
   left: 67px;
-  top: 536px;
+  top: 563px;
+}
+
+.topbar {
+  font-size: 18px;
 }
 
 .topnav-element-before {
