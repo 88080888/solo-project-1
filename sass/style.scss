@@ -4,10 +4,24 @@
 @import "layout";
 
 /* Components */
-//import "components/form_field";
+@import "components/icons.scss";
+@import "components/links.scss";
+@import "components/title-page.scss";
+@import "components/item-menu.scss";
+@import "components/text.scss";
+@import "components/button.scss";
+@import "components/table.scss";
+@import "components/icon-button.scss";
 
 /* Sections */
-//import "section/registration_form";
+@import "sections/chart_wrapper.scss";
+@import "sections/date-wrapper.scss";
+@import "sections/sidebar.scss";
+@import "sections/topbar.scss";
+@import "sections/table-wrapper-in-general.scss";
+@import "sections/table-links.scss";
+@import "sections/button-addnew.scss";
 
 /* Pages / Views */
-//import "pages/registration";
+@import "pages/general.scss";
+@import "pages/links.scss"

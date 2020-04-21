@@ -25,52 +25,53 @@
 
       <div class="sidebar">
         <div class="title">
-          <h1 class="title-text">Just do it<i class="fas fa-bars"></i></h1>
+          <h1 class="title-text">Just do it<i class="fas fa-bars"></i></h1>        
         </div>
-        
+
         <div class="menu row">
-          <ul class="menu">
+          <ul class="menu-list">
             <li class="item-menu">
-              <a href="#">
-                <i class="icons icon-general"></i>General
+              <a href="#" class="link-sidebar">
+                <i class="icon-general icon-sidebar"></i>General
               </a>  
             </li>
             <li class="item-menu">
-              <a href="#">
-                <i class="icons icon-details"></i>Details
+              <a href="#" class="link-sidebar">
+                <i class="icon-details icon-sidebar"></i>Details
               </a>  
             </li>
             <li class="item-menu">
-              <a href="#">
-                <i class="icons icon-links"></i>Links
+              <a href="#" class="link-sidebar">
+                <i class="icon-links icon-sidebar"></i>Links
               </a>  
             </li>
             <li class="item-menu">
-              <a href="#">
-                <i class="icons icon-banners"></i>Banners
+              <a href="#" class="link-sidebar">
+                <i class="icon-banners icon-sidebar"></i>Banners
               </a>  
             </li>
             <li class="item-menu">
-              <a href="#">
-                <i class="icons icon-personaldata"></i>Personal data
+              <a href="#" class="link-sidebar">
+                <i class="icon-personaldata icon-sidebar"></i>Personal data
               </a>  
             </li>
             <li class="item-menu">
-              <a href="#">
-                <i class="icons icon-payout"></i>Payout
+              <a href="#" class="link-sidebar">
+                <i class="icon-payout icon-sidebar"></i>Payout
               </a>  
             </li>
             <li class="item-menu">
-              <a href="#">
-                <i class="icons icon-postback"></i>Postback
+              <a href="#" class="link-sidebar">
+                <i class="icon-postback icon-sidebar"></i>Postback
               </a>  
             </li>
           </ul>
         </div>  
         <div class="chat">
-          <h3>YOUR MANAGER</h3>
+          <h3 class="title manager-title">YOUR MANAGER</h3>
           <div class="manager">
-            <img src="https://ifotos.pl/zobacz/53917inte_qaarwqp.jpg">
+            <img src="https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?cs=srgb&dl=broda-chlopak-czarno-bialy-glowa-842980.jpg&fm=jpg">
+            <span class="green-dot"></span>
             <span>Mikhael E.</span>
           </div>
         </div>
@@ -78,51 +79,53 @@
 
       <div class= "main-container">
         <div class="topbar">
-          <div class="money-wrapper">
+          <div class="money-wrapper topnav-element-before">
             <i class="icons icon-wallet"></i>
             <span>$1,500.00</span>
             <i class="icon icon-arrow-down"></i>
           </div>
-          <div class="notification-wrapper">
+          <div class="notification-wrapper topnav-element-before">
             <i class="icons icon-notification"></i>
           </div>
-          <div class="personaldata-wrapper">
-            <i class="icons icon-personaldata"></i>
+          <div class="profile-wrapper topnav-element-before">
+            <i class="icons icon-profile"></i>
             <span>Leonardo Dicaprio</span>
           </div>
-          <div class="quit-wrapper">
+          <div class="quit-wrapper topnav-element-before">
             <i class="icons icon-quit"></i>
           </div>
         </div>
-        <div class="page general">
-          <div class="general">
-            <div class="title">
-              <h2 class=title-page>General statistic</h2>
+        <div class="pages general">
+          <div class="general-page">
+            <div class="title-page">
+              <h2 class=title>General statistic</h2>
             </div>
             <div class="date-wrapper">
-              <input type="date">
-              <input type="date">
-              <i class="icon-refresh"></i>
+              <input type="date" class="input-wrapper">
+              <input type="date" class="input-wrapper">
+              <button class="button button-refresh">
+                <i class="icon-refresh icon-button"></i>
+              </button>
             </div>
             <div class="table-wrapper">
-              <table class="table">
-                <tr>
-                  <td class="text">Visit Signups</td>
-                  <td>124</td>
+              <table class="table table-general">
+                <tr class="table-row"> 
+                  <td class="text table-data">Visit Signups</td>
+                  <td class="number table-data">124</td>
                 </tr>
-                <tr>
-                  <td class="text">FTD</td>
-                  <td>445</td>
+                <tr class="table-row">
+                  <td class="text table-data">FTD</td>
+                  <td class="number table-data">445</td>
                 </tr>
               </table>
-              <table class="table">
-                <tr>
-                  <td class="text">New deposit</td>
-                  <td>564</td>
+              <table class="table table-general">
+                <tr class="table-row">
+                  <td class="text table-data">New deposit</td>
+                  <td class="number table-data">564</td>
                 </tr>
-                <tr>
-                  <td class="text">Turn over</td>
-                  <td>432</td>
+                <tr class="table-row">
+                  <td class="text table-data">Turn over</td>
+                  <td class="number table-data">432</td>
                 </tr>
               </table>
             </div>
@@ -135,17 +138,17 @@
             </div>
           </div>
         </div>
-        <div class="page links"> 
-          <div class="title">
-            <h2 class=title-page>Links</h2>
+        <div class="pages links"> 
+          <div class="title-page">
+            <h2 class=title>Links</h2>
           </div>
           <div class="button-wrapper">
-            <button>+add new</button>
+            <button class="button button-addnew">+ add new</button>
           </div>
           <div class="table-wrapper">
-            <table>
-              <tr>
-                <td class="text">Home page</td>
+            <table class="table-links">
+              <tr class="table-links-row">
+                <td class="text table-data-links">Home page</td>
                 <td class="link">
                   <a href="#">http://www.homepage.com</a>
                 </td>
@@ -154,8 +157,8 @@
                   <i class="icons icon-trash"></i>
                 </td>
               </tr>
-              <tr>
-                <td class="text">Currently offer</td>
+              <tr class="table-links-row">
+                <td class="text table-data-links">Currently offer</td>
                 <td class="link">
                   <a href="#">http://currently.com</a>
                 </td>
@@ -164,8 +167,8 @@
                   <i class="icons icon-trash"></i>
                 </td>
               </tr>
-              <tr>
-                <td class="text">Blurpix</td>
+              <tr class="table-links-row">
+                <td class="text table-data-links">Blurpix</td>
                 <td class="link">
                   <a href="#">http://blurpix.com</a>
                 </td>
@@ -174,8 +177,8 @@
                   <i class="icons icon-trash"></i>
                 </td>
               </tr>
-              <tr>
-                <td class="text">Your Site</td>
+              <tr class="table-links-row">
+                <td class="text table-data-links">Your Site</td>
                 <td class="link">
                   <a href="#">http://yoursite.com</a>
                 </td>
@@ -184,8 +187,8 @@
                   <i class="icons icon-trash"></i>
                 </td>
               </tr>
-              <tr>
-                <td class="text">Google</td>
+              <tr class="table-links-row">
+                <td class="text table-data-links">Google</td>
                 <td class="link">
                   <a href="#">http://google.com</a>
                 </td>
@@ -194,7 +197,61 @@
                   <i class="icons icon-trash"></i>
                 </td>
               </tr>
+              <tr class="table-links-row">
+                <td class="text table-data-links">Facebook</td>
+                <td class="link">
+                  <a href="#">http://facebook.com</a>
+                </td>
+                <td class="icon">
+                  <i class="icons icon-links"></i>
+                  <i class="icons icon-trash"></i>
+                </td>
+              </tr class="table-links-row">
+              <tr class="table-links-row">
+                <td class="text table-data-links">Dashboard</td>
+                <td class="link">
+                  <a href="#">http://dashboard.com</a>
+                </td>
+                <td class="icon">
+                  <i class="icons icon-links"></i>
+                  <i class="icons icon-trash"></i>
+                </td>
+              </tr>
+              <tr class="table-links-row">
+                <td class="text table-data-links">Blurax</td>
+                <td class="link">
+                  <a href="#">http://blurax.com</a>
+                </td>
+                <td class="icon">
+                  <i class="icons icon-links"></i>
+                  <i class="icons icon-trash"></i>
+                </td>
+              </tr>
+              <tr class="table-links-row">
+                <td class="text table-data-links">Piece of Wine</td>
+                <td class="link">
+                  <a href="#">http://pieceofwine.com</a>
+                </td>
+                <td class="icon">
+                  <i class="icons icon-links"></i>
+                  <i class="icons icon-trash"></i>
+                </td>
+              </tr class="table-links-row">
+              <tr class="table-links-row">
+                <td class="text table-data-links">Twitter</td>
+                <td class="link">
+                  <a href="#">http://twitter.com</a>
+                </td>
+                <td class="icon">
+                  <i class="icons icon-links"></i>
+                  <i class="icons icon-trash"></i>
+                </td>
+              </tr>
+              
             </table>
+          </div>
+          <div class="button-wrapper">
+            <button class="button button-addnew">+ add new</button>
           </div>
         </div>
       </div>

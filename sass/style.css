@@ -352,9 +352,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #000000;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-container {
@@ -365,11 +367,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   background: #e3e3e3;
-}
-
-.sidebar {
-  background: greenyellow;
 }
 
 .topbar {
@@ -379,9 +378,32 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  background: #ffffff;
+  width: 100%;
+}
+
+.pages {
+  background: #ffffff;
+  margin: 15px;
 }
 
 /* Components */
+.text {
+  color: #979797;
+  font-weight: 600;
+}
+
 /* Sections */
+.sidebar {
+  background: greenyellow;
+  width: 100%;
+}
+
+.title-text {
+  color: #ffffff;
+  font-family: "Dancing Script", cursive;
+  font-size: 1px;
+}
+
 /* Pages / Views */
 /*# sourceMappingURL=style.css.map */
