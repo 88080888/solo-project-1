@@ -390,34 +390,6 @@ body {
   margin-top: 79px;
 }
 
-@media (max-width: 700px) {
-  .sidebar {
-    max-width: 100px;
-  }
-  .title-text {
-    display: none;
-  }
-  .menu {
-    display: none;
-  }
-  .chat {
-    display: none;
-  }
-  .topbar {
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    z-index: 999;
-    background: #ffffff;
-  }
-  .main-container {
-    padding-left: 100px;
-  }
-  .chart img {
-    max-height: 100px;
-  }
-}
-
 /* Components */
 .icons {
   color: #a1a1a1;
@@ -731,4 +703,97 @@ body {
 }
 
 /* Pages / Views */
+@media (max-width: 700px) {
+  .sidebar {
+    max-width: 70px;
+  }
+  .title-text {
+    display: none;
+  }
+  .hamburger-btn {
+    font-size: 30px;
+    padding: 35px 5px;
+  }
+  .menu {
+    display: none;
+  }
+  .chat {
+    display: none;
+  }
+  .topbar {
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    padding-right: 0px;
+    font-size: 15px;
+    left: 0;
+  }
+  .main-container {
+    padding-left: 70px;
+  }
+  .general {
+    margin-top: 20px;
+  }
+  .chart img {
+    max-height: 120px;
+  }
+  .table-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: 15px 0px;
+  }
+  .table-links {
+    width: 100%;
+  }
+  .table-general {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .title-chart {
+    padding: 20px;
+  }
+  .link a {
+    font-size: 13px;
+  }
+  .table-data-links {
+    font-size: 13px;
+    padding: 5px 5px;
+  }
+  td.icon {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .icons {
+    padding: 15px 0;
+  }
+  .sidebar-media-active {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 200px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .sidebar-media-active .title {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sidebar-media-active .title .title-text {
+    display: inline;
+    padding: 15px 0;
+    font-size: 27px;
+  }
+  .sidebar-media-active .title .hamburger-btn {
+    padding: 35px 5px;
+  }
+  .sidebar-media-active .menu {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sidebar-media-active .menu .menu-list .item-menu {
+    width: 200px;
+    font-size: 15px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

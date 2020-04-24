@@ -2,7 +2,7 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-@import "media";
+
 
 
 /* Components */
@@ -27,4 +27,6 @@
 
 /* Pages / Views */
 @import "pages/general.scss";
-@import "pages/links.scss"
+@import "pages/links.scss";
+
+@import "media.scss";
