@@ -440,6 +440,7 @@ body {
   background: #f58220;
   border-radius: 5px;
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
 
 .button:hover {
@@ -518,6 +519,7 @@ body {
   color: #a1a1a1;
   padding-top: 40px;
   padding-right: 40px;
+  display: none;
 }
 
 .icon-sidebar {
@@ -706,13 +708,20 @@ body {
 @media (max-width: 700px) {
   .sidebar {
     max-width: 70px;
+    display: none;
+  }
+  .title-page {
+    display: -ms-flexbox;
+    display: flex;
   }
   .title-text {
     display: none;
   }
   .hamburger-btn {
     font-size: 30px;
-    padding: 35px 5px;
+    padding: 10px 20px;
+    display: -ms-flexbox;
+    display: flex;
   }
   .menu {
     display: none;
@@ -721,15 +730,29 @@ body {
     display: none;
   }
   .topbar {
+    display: none;
+  }
+  .topbar-in-media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    max-width: 200px;
+    background: #1b1818;
     bottom: 0;
-    height: 40px;
-    width: 100%;
-    padding-right: 0px;
-    font-size: 15px;
     left: 0;
+    padding: 0;
+  }
+  .topbar-in-media .topnav-element-before {
+    padding: 5px 5px 5px 20px;
+    border: none;
+  }
+  .topbar-in-media .topnav-element-before .icon-notification::after {
+    top: 3px;
+    right: 160px;
   }
   .main-container {
-    padding-left: 70px;
+    padding: 0;
   }
   .general {
     margin-top: 20px;
@@ -781,11 +804,14 @@ body {
   }
   .sidebar-media-active .title .title-text {
     display: inline;
-    padding: 15px 0;
+    padding: 10px 0;
     font-size: 27px;
   }
-  .sidebar-media-active .title .hamburger-btn {
-    padding: 35px 5px;
+  .sidebar-media-active .title .hamburger-btn-sidebar {
+    padding: 30px 5px;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 30px;
   }
   .sidebar-media-active .menu {
     display: -ms-flexbox;

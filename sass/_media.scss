@@ -1,15 +1,21 @@
 @media (max-width: 700px) {
   .sidebar {
     max-width: 70px;
-
+    display: none;
   }
+
+  .title-page {
+    display: flex;
+  }
+
   .title-text {
     display: none;
   }
 
   .hamburger-btn {
     font-size: 30px;
-    padding: 35px 5px;
+    padding: 10px 20px;
+    display: flex;
   }
 
   .menu {
@@ -21,16 +27,31 @@
   }
 
   .topbar {
+    display: none;
+  }
+
+  .topbar-in-media {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    background: $nav-main-color;
     bottom: 0;
-    height: 40px;
-    width: 100%;
-    padding-right: 0px;
-    font-size: 15px;
     left: 0;
+    padding: 0;
+
+    .topnav-element-before {
+      padding: 5px 5px 5px 20px;
+      border: none;
+
+      .icon-notification::after {
+        top: 3px;
+        right: 160px;
+      }
+    }
   }
 
   .main-container {
-    padding-left: 70px;
+    padding: 0;
   }
 
   .general {
@@ -87,12 +108,14 @@
 
       .title-text {
         display: inline;
-        padding: 15px 0;
+        padding: 10px 0;
         font-size: 27px;
       }
 
-      .hamburger-btn {
-        padding: 35px 5px;
+      .hamburger-btn-sidebar {
+        padding: 30px 5px;
+        display: flex;
+        font-size: 30px;
       }
     }
 
@@ -104,7 +127,6 @@
           font-size: 15px;
         }
       }
-
     }
   }
 }

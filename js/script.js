@@ -1,8 +1,14 @@
 document.querySelector('.hamburger-btn').addEventListener('click', function(e) {
   e.preventDefault();
   document.querySelector('.sidebar').classList.toggle('sidebar-media-active');
+  document.querySelector('.topbar').classList.toggle('topbar-in-media');
 });
 
+document.querySelector('.hamburger-btn-sidebar').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('.sidebar').classList.remove('sidebar-media-active');
+  document.querySelector('.topbar').classList.remove('topbar-in-media');
+});
 
 {
   const ctx = document.getElementById('myChart').getContext('2d');
