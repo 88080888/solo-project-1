@@ -13,6 +13,10 @@
   }
 }
 
+.notification-text,.logout-text {
+  display: none;
+}
+
 .icon-notification::after {
   position: absolute;
   content: "";

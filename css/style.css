@@ -604,6 +604,10 @@ body {
   background: #e3e3e3;
 }
 
+.notification-text, .logout-text {
+  display: none;
+}
+
 .icon-notification::after {
   position: absolute;
   content: "";
@@ -714,6 +718,10 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+  .title {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
   .title-text {
     display: none;
   }
@@ -722,6 +730,9 @@ body {
     padding: 10px 20px;
     display: -ms-flexbox;
     display: flex;
+    background: #1b1818;
+    border-radius: 5px;
+    position: fixed;
   }
   .menu {
     display: none;
@@ -739,17 +750,37 @@ body {
         flex-direction: column;
     max-width: 200px;
     background: #1b1818;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     padding: 0;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
   }
   .topbar-in-media .topnav-element-before {
-    padding: 5px 5px 5px 20px;
+    padding: 5px 15px;
     border: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    width: 200px;
+  }
+  .topbar-in-media .topnav-element-before .topnav-text {
+    padding: 10px 0;
+  }
+  .topbar-in-media .topnav-element-before .notification-text, .topbar-in-media .topnav-element-before .logout-text {
+    display: -ms-flexbox;
+    display: flex;
   }
   .topbar-in-media .topnav-element-before .icon-notification::after {
-    top: 3px;
+    top: 10px;
     right: 160px;
+  }
+  .topbar-in-media .topnav-element-before .icon-arrow-down {
+    display: none;
+  }
+  .topbar-in-media .topnav-element-before .icon-topnav {
+    padding: 10px;
   }
   .main-container {
     padding: 0;
@@ -804,14 +835,8 @@ body {
   }
   .sidebar-media-active .title .title-text {
     display: inline;
-    padding: 10px 0;
+    padding: 10px 0px 10px 60px;
     font-size: 27px;
-  }
-  .sidebar-media-active .title .hamburger-btn-sidebar {
-    padding: 30px 5px;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 30px;
   }
   .sidebar-media-active .menu {
     display: -ms-flexbox;
@@ -820,6 +845,9 @@ body {
   .sidebar-media-active .menu .menu-list .item-menu {
     width: 200px;
     font-size: 15px;
+  }
+  .sidebar-media-active .menu .menu-list .item-menu .icon-sidebar {
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
